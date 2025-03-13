@@ -1,3 +1,8 @@
+//Sanya Raja
+// Java 11 am
+//Exam 1
+//Robert Wonch
+
 import java.util.Scanner;
 
 public class Exam1 {
@@ -8,8 +13,7 @@ public class Exam1 {
 		// TODO Auto-generated method stub
 		// this is for "MessagePrinter"
 		System.out.println("This is my first programming test");
-
-		// This is for Beverage Selector
+// This is for Beverage Selector
 		//
 		Scanner scanner = new Scanner(System.in);
 		// Beverage Selector
@@ -24,7 +28,7 @@ public class Exam1 {
 			} else if (drink == 3) {
 				System.out.println("You chose Coffee!");
 			}
-
+//NEED TO MAKE THE LAST ONE AN ELSE statement. If its a selection process then use that.
 			// TODO Auto-generate method stub
 
 		}
@@ -39,7 +43,7 @@ public class Exam1 {
 			System.out.println("The numbers " + num1 + " and " + num2 + " does not sums up to 10");
 		}
 
-		// For class Divider
+// For class Divider
 
 		System.out.print("Enter the first number: ");
 		double input1 = scanner.nextDouble();
@@ -60,17 +64,17 @@ public class Exam1 {
 		int number;
 		System.out.print("Enter a number (0 to stop): ");
 		number = scanner.nextInt();
-		// Keep asking for numbers until the user enters 0
+		//sum +=num1;
 		int sum = number;
 
 		while (number != 0) {
 			System.out.print("Enter a number (0 to stop): ");
 			number = scanner.nextInt();
 
-			sum += number; // Add the number to the sum
+			sum += number; 
 		}
 
-		// Print the sum when user enters 0
+		
 		System.out.println("The total sum is: " + sum);
 
 	}// Main
