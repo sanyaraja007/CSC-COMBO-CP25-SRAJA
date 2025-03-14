@@ -48,7 +48,7 @@ public class Exam1 {
 		System.out.print("Enter the first number: ");
 		double input1 = scanner.nextDouble();
 
-		System.out.print("Enter the second number: ");
+		System.out.print("Enter the second number: t");
 		double input2 = scanner.nextDouble();
 
 		if (input2 == 0) {
