@@ -25,11 +25,9 @@ public class Triangles {
                     in.next(); // consume invalid input
                 }
             }
-
             // fill character
             System.out.print("Enter the fill character: ");
             char fill = in.next().charAt(0);
-
             // Draw triangle
             for (int i = 1; i <= size; i++) {
                 // Print spaces to center the triangle
@@ -42,7 +40,6 @@ public class Triangles {
                 }
                 System.out.println(); // next line
             }
-
             // want to run again?
             System.out.print("Do you want to run the program again? (y/n): ");
             String response = in.next();
@@ -50,8 +47,6 @@ public class Triangles {
                 runAgain = false;
             }
         }
-
-        System.out.println("Program exited.");
-       
+        System.out.println("Program exited."); 
     }
 }
