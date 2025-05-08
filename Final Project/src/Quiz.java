@@ -23,47 +23,47 @@ public class Quiz {
     
     public String  askQuestion3 () {
 	return "What group of words motivates you?"+
-          "Funny, Opportunity, Challenges, Urgency, Leadership" + 
-             "Public Recognition, Awards, Latest Styles, Trends" +
-             "Control, Challenges, Problem solving" +
-             "Stability, Benefits, Security, Calm Work Atmosphere";
+          "\nA.Funny, Opportunity, Challenges, Urgency, Leadership\n" + 
+             "B. Public Recognition, Awards, Latest Styles, Trends\n" +
+             "C. Control, Challenges, Problem solving\n" +
+             "D. Stability, Benefits, Security, Calm Work Atmosphere";
 }
 
     public String askQuestion4() {
     	return "Which word best describes you?" +
-             "Risk-taking"+
-             "Outgoing"+
-             "Logical" +
-             "Stabilizing";
+             "\nA. Risk-taking\n"+
+             " B. Outgoing\n"+
+             " C. Logical\n" +
+             " D. Stabilizing\n";
 }
      public String askQuestion5() {
     	 return"Which of these words would an former employer use to describe you?" +
-             "Good under stress" +
-             "Enthusiastic" +
-             "Prepared" +
-             "Cautious";
+             "\nA. Good under stress" +
+             "B. Enthusiastic" +
+             "C. Prepared" +
+             "D. Cautious";
      }
      public String askQuestion6() {
     	 return "During group projects, which is most like you?"+
-             "Do most of the work" +
-             "Help with the project"+
-             "Plan the project"+
-             "Hope someone did the project" ;
+             "\nA.Do most of the work" +
+             "B. Help with the projec\nt"+
+             "C. Plan the project\n"+
+             "D. Hope someone did the project\n" ;
      }
     
     public String  askQuestion7() {
 	return "Which color best fits you?"+
-             "Blue" +
-             "Green" +
-             "Gold"+
-             "Orange";
+             "\nA.Blue" +
+             "B. Green\n" +
+             "C. Gold\n"+
+             "D. Orange\n";
     }
     public String  askQuestion8() {
     	return "What group of words do you not associate with the most?" +
-             "Touchy feely things, long explanations, looking vulnerable, falling into routines and being manipulated" +
-             "Public humiliation, being unappreciated, appearing uninvolved, people and things that distract attention"+
-             "Uncontrolled emotions, irrational acts, people who are self centered, loss of control"+
-             "Risks, pushy people, change, instability";
+             "\nA. Touchy feely things, long explanations, looking vulnerable, falling into routines and being manipulated" +
+             "B. Public humiliation, being unappreciated, appearing uninvolved, people and things that distract attention\n"+
+             "C. Uncontrolled emotions, irrational acts, people who are self centered, loss of control\n"+
+             "D. Risks, pushy people, change, instability";
 
 }
 }
