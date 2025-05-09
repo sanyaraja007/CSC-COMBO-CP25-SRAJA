@@ -18,53 +18,80 @@ public class Personalitytest1 {
 
 	private static Scanner console = new Scanner(System.in);
 
-	//    private static int typeA = 0;
-	//    private static int typeB = 0;
-	//    private static int typeC = 0;
-	//    private static int typeD = 0;
-
-
 	public static void main(String[] args) {
 		int[] types = new int [4];
 		String userresponse;
 
 		Quiz myquiz = new Quiz();
-		//the method calls the questions that will be asked for the personality test.
-		System.out.println(myquiz.askQuestion1());
-
-		userresponse = console.next();
-		types = responseHandler(userresponse, types);
-
-              
-		console.close();
-		//setting result string to equal the output of the calculated results method
-		// whatever that output equals
-//		String results = calculateResults();
-
-
-		System.out.println (results);
-	}
-
-//		try {
-//			saveResults("output.txt", results());
-//		} catch(IOException e) {
-//			//throws an error when the file cant be read
-//			System.out.println("Unable to save results.");
-//		}
-//	}
-
-	
-
-	private static void saveResults(String path, Object results) {
-		// TODO Auto-generated method stub
 		
+		System.out.println(myquiz.askQuestion1());
+		userresponse = console.next().toUpperCase();
+		types = responseHandler(userresponse, types);
+		
+		System.out.println(myquiz.askQuestion3());
+		userresponse = console.next().toUpperCase();
+		types = responseHandler(userresponse, types);
+		
+		System.out.println(myquiz.askQuestion3());
+		userresponse = console.next().toUpperCase();
+		types = responseHandler(userresponse, types);
+		
+		System.out.println(myquiz.askQuestion4());
+		userresponse = console.next().toUpperCase();
+		types = responseHandler(userresponse, types);
+		
+		System.out.println(myquiz.askQuestion5());
+		userresponse = console.next().toUpperCase();
+		types = responseHandler(userresponse, types);
+		
+		System.out.println(myquiz.askQuestion6());
+		userresponse = console.next().toUpperCase();
+		types = responseHandler(userresponse, types);
+		
+		System.out.println(myquiz.askQuestion7());
+		userresponse = console.next().toUpperCase();
+		types = responseHandler(userresponse, types);
+		
+		System.out.println(myquiz.askQuestion8());
+		userresponse = console.next().toUpperCase();
+		types = responseHandler(userresponse, types);
+		
+	
+		console.close();
+		
+String results = calculateResults(types);
+		System.out.println (results);
+	
+	try {
+		saveResults("output.txt", results);
+		} catch(IOException e) {
+			//throws an error when the file cant be read
+			
+			System.out.println("Unable to save results.");
 	}
+}
+	private static String calculateResults(int[] arr) {
+        int maxIndex = 0;
+        String[] types = {
+            "The Director: Goal-oriented, risk-taking, good under stress",
+            "The Socializer: Relationship-oriented, outgoing, enthusiastic",
+            "The Thinker: Detail-oriented, logical, prepared",
+            "The Supporter: Task-oriented, stabilizing, cautious"
+        };
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] > arr[maxIndex]) {
+                maxIndex = i;
+            }
+        }
 
+        // Print the tallies and result
+        System.out.println("typeA:  " + arr[0] + " \ntypeB:  " + arr[1] + " \ntypeC:  " + arr[2] + " \ntypeD:  " + arr[3]);
+        System.out.println("Your highest score: " + arr[maxIndex]);
+        System.out.println("Personality Type: " + types[maxIndex]);
 
-
-	private static String calculateResults(int []arr) {
-		return "typeA "  + arr[0] + " typeB  " + arr[1] + " typeC " + arr[3] + " typeD " + arr[4];
-	}
+        return types[maxIndex]; 
+    }
+	
 	// returning the results. After you answer the questions, it displays the tally
 
 	//path: It places the text file in the original project folder
@@ -76,9 +103,6 @@ public class Personalitytest1 {
 		//writing the personality explanations into the file
 		String personality = "\n If your typeA score is the highest your personality type is The Director. \n If your typeB score is the highest your personality type is The Socializer. \n If your typeC score is the highest your personality type is The Thinker,\n If your typeD score is the highest your personality type is The Supporter.\n If you have a tie for the score you are a mix of both.";
 		writer.write(personality);
-
-		// Adds the text onto the text file
-
 
 	}
 	public static int[] responseHandler(String res, int[] arr) { 
@@ -98,74 +122,10 @@ public class Personalitytest1 {
 		}
 		return arr;
 	}
-	 
-	
-	public static void results(int [] arr) {
-		int biggestNum;
-		
-		for (int i = 0; i< arr.length; i++) {
-			
-				
-		}
-		
-		
 	}
 	
-}
 
 
 
-
-//4 class variables created for each class type (explained the 4 types in notes)..
-
-//        askQuestion("Which one of these would be chosen if your parents had to describe you in one word?",
-//                "Goal-oriented",
-//                "Relationship-oriented",
-//                "Detail-oriented",
-//                "Task-oriented");
-//
-//
-//        askQuestion("Which one of these jobs attracts you?",
-//                "Manager",
-//                "Sales person",
-//                "Programmer",
-//                "Social worker");
-//
-//
-//        askQuestion("What group of words motivates you?",
-//                "Funny, Opportunity, Challenges, Urgency, Leadership",
-//                "Public Recognition, Awards, Latest Styles, Trends",
-//                "Control, Challenges, Problem solving",
-//                "Stability, Benefits, Security, Calm Work Atmosphere");
-//
-//        askQuestion("Which word best describes you?",
-//                "Risk-taking",
-//                "Outgoing",
-//                "Logical",
-//                "Stabilizing");
-//
-//        askQuestion("Which of these words would an former employer use to describe you?",
-//                "Good under stress",
-//                "Enthusiastic",
-//                "Prepared",
-//                "Cautious");
-//
-//        askQuestion("During group projects, which is most like you?",
-//                "Do most of the work",
-//                "Help with the project",
-//                "Plan the project",
-//                "Hope someone did the project");
-//
-//        askQuestion("Which color best fits you?",
-//                "Blue",
-//                "Green",
-//                "Gold",
-//                "Orange");
-//
-//        askQuestion("What group of words do you not associate with the most?",
-//                "Touchy feely things, long explanations, looking vulnerable, falling into routines and being manipulated",
-//                "Public humiliation, being unappreciated, appearing uninvolved, people and things that distract attention",
-//                "Uncontrolled emotions, irrational acts, people who are self centered, loss of control",
-//                "Risks, pushy people, change, instability");
 
 

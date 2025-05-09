@@ -23,7 +23,7 @@ public class Quiz {
     
     public String  askQuestion3 () {
 	return "What group of words motivates you?"+
-          "\nA.Funny, Opportunity, Challenges, Urgency, Leadership\n" + 
+          " \nA. Funny, Opportunity, Challenges, Urgency, Leadership\n" + 
              "B. Public Recognition, Awards, Latest Styles, Trends\n" +
              "C. Control, Challenges, Problem solving\n" +
              "D. Stability, Benefits, Security, Calm Work Atmosphere";
@@ -31,36 +31,36 @@ public class Quiz {
 
     public String askQuestion4() {
     	return "Which word best describes you?" +
-             "\nA. Risk-taking\n"+
-             " B. Outgoing\n"+
-             " C. Logical\n" +
-             " D. Stabilizing\n";
+            "\nA. Risk-taking\n"+
+             "B. Outgoing\n"+
+             "C. Logical\n" +
+             "D. Stabilizing\n";
 }
      public String askQuestion5() {
     	 return"Which of these words would an former employer use to describe you?" +
-             "\nA. Good under stress" +
-             "B. Enthusiastic" +
-             "C. Prepared" +
-             "D. Cautious";
+             "\nA. Good under stress\n" +
+             "B. Enthusiastic\n" +
+             "C. Prepared\n" +
+             "D. Cautious\n";
      }
      public String askQuestion6() {
     	 return "During group projects, which is most like you?"+
-             "\nA.Do most of the work" +
-             "B. Help with the projec\nt"+
+             "\nA. Do most of the work\n" +
+             "B. Help with the project\n"+
              "C. Plan the project\n"+
              "D. Hope someone did the project\n" ;
      }
     
     public String  askQuestion7() {
 	return "Which color best fits you?"+
-             "\nA.Blue" +
+             "\nA. Blue\n" +
              "B. Green\n" +
              "C. Gold\n"+
              "D. Orange\n";
     }
     public String  askQuestion8() {
     	return "What group of words do you not associate with the most?" +
-             "\nA. Touchy feely things, long explanations, looking vulnerable, falling into routines and being manipulated" +
+             "\nA. Touchy feely things, long explanations, looking vulnerable, falling into routines and being manipulated\n" +
              "B. Public humiliation, being unappreciated, appearing uninvolved, people and things that distract attention\n"+
              "C. Uncontrolled emotions, irrational acts, people who are self centered, loss of control\n"+
              "D. Risks, pushy people, change, instability";
